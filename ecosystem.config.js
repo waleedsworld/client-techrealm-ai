@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "sortededucation",
+      name: "techrealm-ai-dashboard",
       script: "yarn start",
       port: 3000,
     },

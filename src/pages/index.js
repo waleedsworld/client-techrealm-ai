@@ -36,7 +36,7 @@ export default function Home() {
 
       <div className="container" style={{ marginTop: "5rem" }}>
         <Row>
-          <Col span={18} offset={4}>
+          <Col xs={24} sm={22} md={18} lg={16} offset={0} style={{ margin: "0 auto" }}>
             <Card>
               <ProjectForm />
             </Card>
@@ -49,8 +49,8 @@ export default function Home() {
           </div>
 
           <Row gutter={[18, 18]}>
-            {projects?.map((project) => (
-              <Col span={8}>
+            {projects?.map((project, index) => (
+              <Col key={project?._id || project?.link || index} xs={24} sm={12} md={8}>
                 <ProjectCard project={project} />
               </Col>
             ))}

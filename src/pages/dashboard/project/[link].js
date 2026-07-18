@@ -57,7 +57,13 @@ const SingleProject = () => {
     <div className="container" style={{ marginTop: "5rem" }}>
       <Card>
         <Flex justify="space-between">
-          <img alt="avatar" src={project?.image} style={imgStyle} />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            alt={project?.projectName ? `${project.projectName} cover` : "Project cover image"}
+            src={project?.image}
+            style={imgStyle}
+            loading="lazy"
+          />
           <Flex
             vertical
             justify="space-between"

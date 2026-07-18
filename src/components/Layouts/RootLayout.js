@@ -14,21 +14,15 @@ const RootLayout = ({ children }) => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/*<link
-          rel="icon"
-          href={general?.favicon?.secure_url || "./favicon.png"}
-        />*/}
-        <link
-          href="https://www.dafontfree.net/embed/Z290aGFtLWJsYWNrJmRhdGEvNDYvZy82Mzg2MS9Hb3RoYW0tQmxhY2sub3Rm"
-          rel="stylesheet"
-          type="text/css"
-        />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Layout>
         <Header className="container" style={{ background: "none" }}>
           <Flex className="header-nav" justify="space-between" align="center">
             <div className="app-logo">
-              <Link href="/">LOGO</Link>
+              <Link href="/" aria-label="TechRealm AI home">
+                TechRealm AI
+              </Link>
             </div>
             <div className="nav-item">
               <Space size="middle">

@@ -26,4 +26,4 @@ jobs:
               git pull --rebase
               npm install
               npm run build
-              pm2 reload sortededucation
+              pm2 reload techrealm-ai-dashboard

@@ -32,8 +32,8 @@ const Dashboard = () => {
 
         <div style={{ marginTop: "5rem" }}>
           <Row gutter={[18, 18]}>
-            {projects?.map((project) => (
-              <Col span={8}>
+            {projects?.map((project, index) => (
+              <Col key={project?._id || project?.link || index} xs={24} sm={12} md={8}>
                 <ProjectCard project={project} />
               </Col>
             ))}
